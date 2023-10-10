@@ -52,7 +52,7 @@ function App() {
         .catch((err) => console.log(err))
   }
 
-  const updateHandler = (data) => {
+  const updateHandler = (name) => {
       axios.put(`http://localhost:8080/api/v1/member/${name}`, {
           name : name,
           description : description
